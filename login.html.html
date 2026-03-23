@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #ff416c, #ff4b2b);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+    }
+
+    .parent-container {
+        background: linear-gradient(to bottom right, #ffffff, #f2f2f2);
+        width: 350px;
+        border-radius: 15px;
+        padding: 30px 25px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    .parent-container h3 {
+        margin-bottom: 25px;
+        color: #333;
+        background: linear-gradient(to right, #2575fc, #6a11cb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 1.8rem;
+    }
+
+    .form-field {
+        margin: 15px 0;
+    }
+
+    .form-field input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        outline: none;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+    }
+
+    .form-field input:focus {
+        border: 2px solid #2575fc;
+        box-shadow: 0 0 10px rgba(37,117,252,0.3);
+    }
+
+    .btn-grad {
+        background-image: linear-gradient(to right, #2575fc, #6a11cb);
+        padding: 12px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.5s;
+        box-shadow: 0 5px 15px rgba(37,117,252,0.4);
+    }
+
+    .btn-grad:hover {
+        background-image: linear-gradient(to right, #6a11cb, #2575fc);
+        box-shadow: 0 8px 20px rgba(37,117,252,0.6);
+    }
+
+    .register-link {
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+
+    .register-link a {
+        color: #ff416c;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .register-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<form class="parent-container">
+    <h3>LOGIN</h3>
+
+    <div class="form-field">
+        <input type="email" placeholder="Your email" required />
+    </div>
+
+    <div class="form-field">
+        <input type="password" placeholder="Password" required />
+    </div>
+
+    <button class="btn-grad">LOGIN</button>
+
+    <div class="register-link">
+        Don't have an account? <a href="register.html">Register here</a>
+    </div>
+</form>
+
+</body>
+</html>
